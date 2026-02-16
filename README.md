@@ -1,43 +1,43 @@
-# Análisis de Eficiencia de Operadores - CallMeMaybe 📞📊
+# CallMeMaybe: Operator Efficiency Analysis 📞📊
 
-## 📝 Descripción del Proyecto
-Este proyecto fue desarrollado para **CallMeMaybe**, un proveedor de telefonía virtual. El objetivo principal es proporcionar a los supervisores una herramienta analítica para identificar a los operadores de call center con bajo desempeño.
+## 📝 Project Description
+This project was developed for **CallMeMaybe**, a virtual telephony provider. The primary objective is to provide supervisors with an analytical tool to identify underperforming call center operators.
 
-Un operador se clasifica como **ineficaz** si presenta:
-* Un alto volumen de llamadas entrantes perdidas.
-* Tiempos de espera excesivos para los clientes.
-* Un bajo número de llamadas salientes realizadas (en perfiles donde esta es su función principal).
+An operator is classified as **inefficient** if they exhibit:
+* A high volume of missed incoming calls.
+* Excessive wait times for customers.
+* A low number of outgoing calls (in profiles where this is their primary function).
 
-## 🚀 Estructura del Repositorio
-* `Proyecto_Final.ipynb`: Notebook de Jupyter con el análisis completo (EDA, procesamiento y conclusiones).
-* `telecom_dataset_us.csv`: Datos de las llamadas (fechas, duración, dirección, etc.).
-* `telecom_clients_us.csv`: Información sobre las tarifas y clientes.
+## 🚀 Repository Structure
+* `Proyecto_Final.ipynb`: Jupyter Notebook containing the full analysis (EDA, processing, and conclusions).
+* `telecom_dataset_us.csv`: Call data (dates, duration, direction, etc.).
+* `telecom_clients_us.csv`: Information regarding tariffs and clients.
 
-## 🛠️ Metodología
-El análisis sigue los siguientes pasos:
-1.  **Preprocesamiento de datos:** Limpieza de duplicados, gestión de valores ausentes (especialmente en IDs de operadores) y conversión de tipos de datos.
-2.  **Análisis Exploratorio (EDA):** Identificación de patrones de comportamiento en las llamadas entrantes y salientes.
-3.  **Definición de Métricas:** Establecimiento de umbrales para medir la ineficacia (tiempos de espera vs. efectividad).
-4.  **Segmentación:** Clasificación de operadores en perfiles específicos (ej. Perfeccionistas vs. Sobrecargados).
+## 🛠️ Methodology
+The analysis follows these steps:
+1. **Data Preprocessing:** Cleaning duplicates, managing missing values (specifically in operator IDs), and data type conversion.
+2. **Exploratory Data Analysis (EDA):** Identifying behavior patterns in both incoming and outgoing calls.
+3. **Metric Definition:** Establishing thresholds to measure inefficiency (wait times vs. effectiveness).
+4. **Segmentation:** Classifying operators into specific profiles (e.g., "Perfectionists" vs. "Overloaded").
 
-## 📈 Resultados Clave
-* Se identificaron **273 operadores críticos** que requieren intervención.
-* La tasa promedio de llamadas perdidas detectada es del **31.55%**.
-* **Segmentación de perfiles:**
-    * **Tipo A (Lentos/Perfeccionistas):** Bajo tiempo de respuesta pero alta resolución.
-    * **Tipo B (Impacientes/Sobrecargados):** Alta tasa de abandono de llamadas por parte del cliente.
+## 📈 Key Results
+* **273 critical operators** were identified as requiring intervention.
+* The average missed call rate detected is **31.55%**.
+* **Profile Segmentation:**
+    * **Type A (Slow/Perfectionists):** Low response time but high resolution.
+    * **Type B (Impatient/Overloaded):** High customer call abandonment rates.
 
-## 💻 Tecnologías Utilizadas
+## 💻 Technologies Used
 * **Python 3.x**
-* **Pandas & Numpy:** Manipulación y limpieza de datos.
-* **Matplotlib & Seaborn:** Visualización de datos y diagramas estadísticos.
-* **Jupyter Notebook:** Entorno de desarrollo.
+* **Pandas & Numpy:** Data manipulation and cleaning.
+* **Matplotlib & Seaborn:** Data visualization and statistical charting.
+* **Jupyter Notebook:** Development environment.
 
-## 💡 Recomendaciones
-Basado en los hallazgos, el proyecto sugiere:
-* **Capacitación técnica:** Para los operadores con altos tiempos de espera.
-* **Revisión de carga de trabajo:** Para aquellos con alta tasa de llamadas perdidas.
-* **Monitoreo de KPIs:** Implementación de un dashboard basado en los resultados de este análisis.
+## 💡 Recommendations
+Based on the findings, the project suggests:
+* **Technical Training:** For operators with high wait times.
+* **Workload Review:** For those with a high rate of missed calls.
+* **KPI Monitoring:** Implementing a dashboard based on the results of this analysis.
 
 ---
-Desarrollado como proyecto final de análisis de datos.
+*Developed as a final Data Analysis project.*
